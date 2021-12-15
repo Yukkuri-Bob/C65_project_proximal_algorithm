@@ -28,6 +28,7 @@ python experiment_2.py -d cifar -a 123 -so 24 -b 245 -ne 700 -r 0 -p 1
 There are several changes compared with original projects, which will be listed below:
 
 * The name of original license file has changed to ``LICENSE_original``, please carefully check before using this project.
+* We also provide the original introduction file in ``README_original_tensorflow.md``, please have a check.
 * Since the original project are designed to work on Tensorflow 1.\*.\*, all files are edited to be able to work on Tensorflow 2.\*.\* (by forcing using `tensorflow.compact.v1`).
 * An parameter using to control the random noise has been added to ``argParser_edited.py``.
 * Leaky ReLU method has been added in ``utils.py``.
