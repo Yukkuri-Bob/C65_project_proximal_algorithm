@@ -352,31 +352,31 @@ if plot_option:
     fig1 = plt.figure()
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['1']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TrainLoss_prox_sarah1, 'b-', label = 'ProxSARAH single sample')  
+        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TrainLoss_prox_sarah1, 'C0-', label = 'ProxSARAH single sample')  
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['2']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TrainLoss_prox_sarah2, 'C0-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TrainLoss_prox_sarah2, 'b-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['3']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TrainLoss_prox_sarah3, 'C1-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TrainLoss_prox_sarah3, 'C2-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['4']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TrainLoss_prox_sarah4, 'C2-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TrainLoss_prox_sarah4, 'C1-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['5']):
         plt.plot(np.array(hist_NumEpoch_prox_sarah5), hist_TrainLoss_prox_sarah5, 'C3-', label = 'ProxSARAH b=n^(1/3), gamma = 0.99')   
 
     if (alg_list["ProxSpiderBoost"]):
-        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TrainLoss_prox_spdb, 'C9-', label = 'ProxSpiderBoost')
+        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TrainLoss_prox_spdb, 'C6-.', label = 'ProxSpiderBoost')
     
 #    if (alg_list["ProxSVRG"]):
 #        plt.plot(np.array(hist_NumEpoch_prox_svrg), hist_TrainLoss_prox_svrg, 'C8--', label = 'ProxSVRG')   
     
     if (alg_list["ProxSGD"]):
-        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TrainLoss_prox_sgd, 'g-.', label = 'ProxSGD')
+        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TrainLoss_prox_sgd, 'g--', label = 'ProxSGD')
         
     if (alg_list["SGD"]):
-        plt.plot(np.array(hist_NumEpoch_sgd), hist_TrainLoss_sgd, 'C8--', label = 'SGD')
+        plt.plot(np.array(hist_NumEpoch_sgd), hist_TrainLoss_sgd, 'r--', label = 'SGD')
         
 
 
@@ -392,28 +392,28 @@ if plot_option:
     fig2 = plt.figure()
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['1']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah1), hist_GradNorm_prox_sarah1, 'b-', label = 'ProxSARAH single sample')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah1), hist_GradNorm_prox_sarah1, 'C0-', label = 'ProxSARAH single sample')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['2']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah2), hist_GradNorm_prox_sarah2, 'C0-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah2), hist_GradNorm_prox_sarah2, 'b-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['3']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah3), hist_GradNorm_prox_sarah3, 'C1-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah3), hist_GradNorm_prox_sarah3, 'C2-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['4']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah4), hist_GradNorm_prox_sarah4, 'C2-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah4), hist_GradNorm_prox_sarah4, 'C1-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['5']):
         plt.semilogy(np.array(hist_NumEpoch_prox_sarah5), hist_GradNorm_prox_sarah5, 'C3-', label = 'ProxSARAH b=n^(1/3), gamma = 0.99')    
 
     if (alg_list["ProxSpiderBoost"]):
-        plt.semilogy(np.array(hist_NumEpoch_prox_spdb), hist_GradNorm_prox_spdb, 'C9-', label = 'ProxSpiderBoost')
+        plt.semilogy(np.array(hist_NumEpoch_prox_spdb), hist_GradNorm_prox_spdb, 'C6-.', label = 'ProxSpiderBoost')
     
 #    if (alg_list["ProxSVRG"]):
 #        plt.semilogy(np.array(hist_NumEpoch_prox_svrg), hist_GradNorm_prox_svrg, 'C8--', label = 'ProxSVRG')
 
     if (alg_list["ProxSGD"]):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sgd), hist_GradNorm_prox_sgd, 'g-.', label = 'ProxSGD')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sgd), hist_GradNorm_prox_sgd, 'g--', label = 'ProxSGD')
 
     fig2.suptitle("Norm Grad Mapping Square - " + examplename + ' - ' +data_name)
     plt.xlabel("Number of epoch")
@@ -427,28 +427,28 @@ if plot_option:
     fig3 = plt.figure()
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['1']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah1), hist_MinGradNorm_prox_sarah1, 'b-', label = 'ProxSARAH single sample')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah1), hist_MinGradNorm_prox_sarah1, 'C0', label = 'ProxSARAH single sample')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['2']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah2), hist_MinGradNorm_prox_sarah2, 'C0-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah2), hist_MinGradNorm_prox_sarah2, 'b-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['3']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah3), hist_MinGradNorm_prox_sarah3, 'C1-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah3), hist_MinGradNorm_prox_sarah3, 'C2-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['4']):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sarah4), hist_MinGradNorm_prox_sarah4, 'C2-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sarah4), hist_MinGradNorm_prox_sarah4, 'C1-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['5']):
         plt.semilogy(np.array(hist_NumEpoch_prox_sarah5), hist_MinGradNorm_prox_sarah5, 'C3-', label = 'ProxSARAH b=n^(1/3), gamma = 0.99') 
     
     if (alg_list["ProxSpiderBoost"]):
-        plt.semilogy(np.array(hist_NumEpoch_prox_spdb), hist_MinGradNorm_prox_spdb, 'C9-', label = 'ProxSpiderBoost')
+        plt.semilogy(np.array(hist_NumEpoch_prox_spdb), hist_MinGradNorm_prox_spdb, 'C6-.', label = 'ProxSpiderBoost')
     
 #    if (alg_list["ProxSVRG"]):
 #        plt.semilogy(np.array(hist_NumEpoch_prox_svrg), hist_MinGradNorm_prox_svrg, 'C8--', label = 'ProxSVRG')
 
     if (alg_list["ProxSGD"]):
-        plt.semilogy(np.array(hist_NumEpoch_prox_sgd), hist_MinGradNorm_prox_sgd, 'g-.', label = 'ProxSGD')
+        plt.semilogy(np.array(hist_NumEpoch_prox_sgd), hist_MinGradNorm_prox_sgd, 'g--', label = 'ProxSGD')
 
     fig3.suptitle("Min Norm Grad Mapping Square - " + examplename + ' - ' +data_name)
     plt.xlabel("Number of epoch")
@@ -462,33 +462,34 @@ if plot_option:
     fig4 = plt.figure()
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['1']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TrainAcc_prox_sarah1, 'b-', label = 'ProxSARAH single sample')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TrainAcc_prox_sarah1, 'C0', label = 'ProxSARAH single sample')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['2']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TrainAcc_prox_sarah2, 'C0-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TrainAcc_prox_sarah2, 'b-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['3']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TrainAcc_prox_sarah3, 'C1-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TrainAcc_prox_sarah3, 'C2-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['4']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TrainAcc_prox_sarah4, 'C2-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TrainAcc_prox_sarah4, 'C1-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['5']):
         plt.plot(np.array(hist_NumEpoch_prox_sarah5), hist_TrainAcc_prox_sarah5, 'C3-', label = 'ProxSARAH b=n^(1/3), gamma = 0.99')    
 
     if (alg_list["ProxSpiderBoost"]):
-        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TrainAcc_prox_spdb, 'C9-', label = 'ProxSpiderBoost')
+        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TrainAcc_prox_spdb, 'C6-.', label = 'ProxSpiderBoost')
 
 #    if (alg_list["ProxSVRG"]):
 #        plt.plot(np.array(hist_NumEpoch_prox_svrg), hist_TrainAcc_prox_svrg, 'C8--', label = 'ProxSVRG')
 
     if (alg_list["ProxSGD"]):
-        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TrainAcc_prox_sgd, 'g-.', label = 'ProxSGD')
+        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TrainAcc_prox_sgd, 'g--', label = 'ProxSGD')
         
     if (alg_list["SGD"]):
-        plt.plot(np.array(hist_NumEpoch_sgd), hist_TrainAcc_sgd, 'C8--', label = 'SGD')
+        plt.plot(np.array(hist_NumEpoch_sgd), hist_TrainAcc_sgd, 'r--', label = 'SGD')
 
     fig4.suptitle("Train Accuracy - " + examplename + ' - ' +data_name)
+    plt.ylim(0.69, 0.91)
     plt.xlabel("Number of epoch")
     plt.ylabel("Train Accuracy")
     plt.legend()
@@ -500,33 +501,34 @@ if plot_option:
     fig5 = plt.figure()
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['1']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TestAcc_prox_sarah1, 'b-', label = 'ProxSARAH single sample')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah1), hist_TestAcc_prox_sarah1, 'C0-', label = 'ProxSARAH single sample')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['2']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TestAcc_prox_sarah2, 'C0-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah2), hist_TestAcc_prox_sarah2, 'b-', label = 'ProxSARAH b=sqrt(n), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['3']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TestAcc_prox_sarah3, 'C1-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah3), hist_TestAcc_prox_sarah3, 'C2-', label = 'ProxSARAH b=sqrt(n), gamma = 0.99')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['4']):
-        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TestAcc_prox_sarah4, 'C2-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
+        plt.plot(np.array(hist_NumEpoch_prox_sarah4), hist_TestAcc_prox_sarah4, 'C1-', label = 'ProxSARAH b=n^(1/3), gamma = 0.95')
 
     if (alg_list["ProxSARAH"] and prox_sarah_option['5']):
         plt.plot(np.array(hist_NumEpoch_prox_sarah5), hist_TestAcc_prox_sarah5, 'C3-', label = 'ProxSARAH b=n^(1/3), gamma = 0.99') 
 
     if (alg_list["ProxSpiderBoost"]):
-        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TestAcc_prox_spdb, 'C9-', label = 'ProxSpiderBoost')
+        plt.plot(np.array(hist_NumEpoch_prox_spdb), hist_TestAcc_prox_spdb, 'C6-.', label = 'ProxSpiderBoost')
 
 #    if (alg_list["ProxSVRG"]):
 #        plt.plot(np.array(hist_NumEpoch_prox_svrg), hist_TestAcc_prox_svrg, 'C8--', label = 'ProxSVRG')
 
     if (alg_list["ProxSGD"]):
-        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TestAcc_prox_sgd, 'g-.', label = 'ProxSGD')
+        plt.plot(np.array(hist_NumEpoch_prox_sgd), hist_TestAcc_prox_sgd, 'g--', label = 'ProxSGD')
         
     if (alg_list["SGD"]):
-        plt.plot(np.array(hist_NumEpoch_sgd), hist_TestAcc_sgd, 'C8--', label = 'SGD')
+        plt.plot(np.array(hist_NumEpoch_sgd), hist_TestAcc_sgd, 'r--', label = 'SGD')
 
     fig5.suptitle("Test Accuracy - " + examplename + ' - ' +data_name)
+    plt.ylim(0.69, 0.91)
     plt.xlabel("Number of epoch")
     plt.ylabel("Test Accuracy")
     plt.legend()
