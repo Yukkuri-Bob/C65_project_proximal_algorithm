@@ -1,7 +1,9 @@
 # C65_project_proximal_algorithm
 
+<p align="center">
 <img alt="python" src="https://img.shields.io/badge/python-%3E%3D3.8.8-blue?logo=python">
 <img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-%3E%3D2.5.0-orange?logo=tensorflow">
+</p>
 
 ## Introduction
 
@@ -15,15 +17,18 @@ The original paper for original code can be found in
 
 ```text
 python experiment_1.py -d fashion_mnist -a 1234 -so 24 -b 245 -ne 150 -r 1 -p 1
+```
+```text
 python experiment_2.py -d cifar -a 123 -so 24 -b 245 -ne 700 -r 0 -p 1
 ```
+
 
 ## Changelist
 
 There are several changes compared with original projects, which will be listed below:
 
 * The name of original license file has changed to ``LICENSE_original``, please carefully check before using this project.
-* Since the original project are designed to work on Tensorflow 1.*.*, all files are edited to be able to work on Tensorflow2.*.* (by forcing using tensorflow.compact.v1).
+* Since the original project are designed to work on Tensorflow 1.\*.\*, all files are edited to be able to work on Tensorflow 2.\*.\* (by forcing using `tensorflow.compact.v1`).
 * An parameter using to control the random noise has been added to ``argParser_edited.py``.
 * Leaky ReLU method has been added in ``utils.py``.
 
