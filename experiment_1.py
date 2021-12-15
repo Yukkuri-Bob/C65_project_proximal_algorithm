@@ -7,7 +7,7 @@ Created on Wed Dec  8 17:38:25 2021
 
 Modified version for usage of report. This version should work on tensorflow 2.*.*.
 
-Train the network defined in model_test.py. For option please check argParser_test.py.
+Train the network defined in model_experiment.py. For option please check argParser_edited.py.
 
 If the layer has been changed, please carefully change hyperparameters to make methods works.
 
