@@ -1,8 +1,8 @@
 # C65_project_proximal_algorithm
 
 <p align="center">
-<img alt="python" src="https://img.shields.io/badge/python-%3E%3D3.8.8-blue?logo=python">
-<img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-%3E%3D2.5.0-orange?logo=tensorflow">
+<img alt="python" src="https://img.shields.io/badge/python-3.8.8-blue?logo=python">
+<img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-2.5.0-orange?logo=tensorflow">
 </p>
 
 ## Introduction
@@ -12,6 +12,12 @@ This package is for numerical experiments in the report of C6.5. The code is bas
 The original paper for original code can be found in 
 
 * N. H. Pham, L. M. Nguyen, D. T. Phan, and Q. Tran-Dinh. **[Proxsarah: An efficient algorithmic framework for stochastic composite non-convex optimization](http://jmlr.org/papers/v21/19-248.html)**. <em>Journal of Machine Learning Research</em>, 21(110):1–48,2020.
+
+## System, hardware and estimate time
+
+The data in report were generated in a personal computer running Ubuntu 20.04. The computer contains an Inter i7-10700f, Nvidia RTX 3060Ti and 32GB RAM.
+
+For experiment 1, each option of data sets spends 10 minutes. For experiments it may needs 2 hours in the previous mentioned computer.
 
 ## How to use
 
@@ -30,7 +36,7 @@ There are several changes compared with original projects, which will be listed 
 * The name of original license file has changed to ``LICENSE_original``, please carefully check before using this project.
 * We also provide the original introduction file in ``README_original_tensorflow.md``, please have a check.
 * Since the original project are designed to work on Tensorflow 1.\*.\*, all files are edited to be able to work on Tensorflow 2.\*.\* (by forcing using `tensorflow.compact.v1`).
-* An parameter using to control the random noise has been added to ``argParser_edited.py``.
+* An parameter `-r` using to control the random noise has been added to ``argParser_edited.py``.
 * Leaky ReLU method has been added in ``utils.py``.
 
 ## Added list
