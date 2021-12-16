@@ -17,7 +17,7 @@ The original paper for original code can be found in
 
 The data in report were generated in a personal computer running Ubuntu 20.04. The computer contains an Inter i7-10700f, Nvidia RTX 3060Ti and 32GB RAM.
 
-For experiment 1, each option of data sets spends 10 minutes. For experiments it may needs 2 hours in the previous mentioned computer.
+For experiment 1, each option of data sets spends 10 minutes. For experiment 2 it may needs 2 hours in the previous mentioned computer.
 
 ## How to use
 
